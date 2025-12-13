@@ -97,3 +97,5 @@ Supprimer la route par défaut
     Deux cas possibles :
     Si une route par défaut existe → envoie le paquet via la route par défaut
     Sinon → le paquet est jeté / drop, et souvent un message ICMP “destination unreachable” est renvoyé
+
+### tp will do it later....

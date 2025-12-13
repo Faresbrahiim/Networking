@@ -11,3 +11,5 @@ organized into chapters for easy learning.
 
 - [Chapitre 03 — Routage statique](Chapters/routageStatique.md)
 
+- [Chapitre 04 — Routage dynamique](Chapters/routageDynamique.md)
+
