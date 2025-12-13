@@ -9,14 +9,13 @@
 Sans adresse IP, un appareil ne peut pas communiquer sur le réseau.
 
 ## 2 Versions des adresses IP 
-###  IPv4 
 
+###  IPv4 
 Format le plus utilisé historiquement
 Exemple :
     -> 192.168.1.10
 
 ### IPv6
-
 Créée pour résoudre le manque d’adresses IPv4
 Exemple :
     -> 2001:0db8:85a3:0000:0000:8a2e:0370:7334
@@ -78,7 +77,7 @@ Moins il y a de bits pour les hôtes → moins il y a d’appareils
 
 #### Number of hosts=2power(bits for hosts)−2
     pour quoi -2 
-    -> 1 pour adress réseau 
+    -> 1 pour adress réseau   (see )
     -> 2 pour brodcast adress (see 11)
 
 ## 9  CIDR (Classless Inter-Domain Routing)
@@ -100,7 +99,7 @@ exemple :
     hosts = 2^(bits hôtes) − 2 
     hosts = 2^(8)-2 = 256 - 2 = 254
     Ce réseau peut avoir 62 appareils.
-## 10 brodcast adress 
+## 11 brodcast adress 
 C’est une adresse spéciale dans chaque réseau
 Permet d’envoyer un message à tous les appareils du réseau en même temps
 On ne peut pas l’attribuer à un ordinateur ou appareil individuel
@@ -116,3 +115,37 @@ Règle simple : la broadcast = la dernière adresse du réseau
     Nombre d’adresses = 2^6 = 64
     Adresse réseau = 192.168.1.0
     Adresse broadcast = 192.168.1.0 + 63 = 192.168.1.63
+
+## 12 default gateway
+C'est l’adresse IP d’un routeur dans ton réseau local (LAN)
+Sert de passerelle vers d’autres réseaux, comme Internet
+Sans elle, un appareil ne peut pas communiquer en dehors de son réseau local
+### Default gateway : 
+souvent la première adresse disponible pour un appareil dans le réseau.
+
+    Exemple : 192.168.1.1
+
+Tous les PC du réseau envoient leurs paquets vers 192.168.1.1 si la destination est hors réseau.
+
+## 13 Qu’est-ce que le DNS ?
+DNS = Domain Name System
+Sert à traduire les noms de domaine en adresses IP
+Chaque appareil sur Internet communique avec des IP, mais les humains préfèrent des noms faciles à retenir
+Exemple : 
+
+    www.google.com
+
+s ton ordinateur doit connaître l’adresse IP du serveur Google pour se connecter. c'est le travail du DNS 
+Utilisateur → DNS → IP → Serveur web
+
+## 14 Quelques points supplémentaires nous allons decouvrir....
+
+    Masque de sous-réseau (Subnet Mask)
+    Plages d’adresses réservées
+    DHCP (Dynamic Host Configuration Protocol)
+    IP statique vs IP dynamique
+    ARP (Address Resolution Protocol)
+
+
+## cisco commands pour la configuration  (not yet)
+- [cisco commands](Chapters/ciscoCommands.md)
