@@ -8,3 +8,6 @@ organized into chapters for easy learning.
 - [Chapitre 01 — Introduction aux réseaux](Chapters/introduction.md)
 
 - [Chapitre 02 — Adressage d'un réseaux](Chapters/adressage.md)
+
+- [Chapitre 03 — Routage statique](Chapters/routageStatique.md)
+
